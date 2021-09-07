@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    app:cardCornerRadius="10px"
+    android:layout_marginBottom="20px"
+    app:cardElevation="10px"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:id="@+id/recycler_view_rappel_hour"
+        android:layout_height="35dp"
+        android:layout_width="85dp"
+        android:text="00:00"
+        android:textStyle="bold"
+        android:textColor="@color/myBlack"
+        android:textSize="18dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        />
+
+    <View
+        android:layout_height="3dp"
+        android:layout_width="35dp"
+        android:rotation="90"
+        android:background="@drawable/vertical_line_rappel"
+
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_view_rappel_hour"
+        app:layout_constraintEnd_toEndOf="@+id/recycler_view_rappel_hour"
+        app:layout_constraintTop_toTopOf="@+id/recycler_view_rappel_hour"
+        app:layout_constraintStart_toEndOf="@+id/recycler_view_rappel_hour"
+
+        />
+
+    <TextView
+        android:id="@+id/recycler_view_rappel_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="left"
+
+        android:text="[title]"
+        android:textColor="@color/myBlack"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_view_rappel_hour"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/recycler_view_rappel_hour"
+        app:layout_constraintTop_toTopOf="@+id/recycler_view_rappel_hour"
+
+        />
+
+    <TextView
+        android:id="@+id/recycler_view_rappel_description"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@color/myLightGrey"
+        android:text="[DESCRIPTION]"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view_rappel_hour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        android:paddingLeft="5px"
+        android:paddingTop="10px"
+        android:paddingBottom="20px"
+        android:visibility="gone"
+        />
+
+    <View
+        android:id="@+id/recycler_view_rappel_descriptionBarre"
+        android:layout_height="3dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/vertical_line_rappel"
+
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_view_rappel_hour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view_rappel_hour"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+

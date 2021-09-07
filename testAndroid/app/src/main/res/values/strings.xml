@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PetCare</string>
+    <string name="hintBirthDate">Date de naissance</string>
+    <string name="hintTime">Saisissez l\'heure</string>
+    <string name="sauvegarder">Sauvegarder</string>
+    <string name="annuler">Annuler</string>
+    <string name="title_activity_animal_creation">animalCreation</string>
+    <string name="retour">Retour</string>
+    <string name="nomAnimal">Nom</string>
+    <string name="poids">Poids</string>
+    <string name="sterilise">Stérilisé.e?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

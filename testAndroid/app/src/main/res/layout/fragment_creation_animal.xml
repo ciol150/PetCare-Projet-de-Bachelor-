@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/frag_crea_animal_retour"
+
+        style="@style/retourBouton"
+
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.05"/>
+
+
+    <RadioGroup
+        android:id="@+id/frag_crea_animal_radio_group_espece"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_crea_animal_retour"
+        app:layout_constraintVertical_bias="0.05">
+
+        <RadioButton
+            android:id="@+id/frag_crea_animal_radio_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat" />
+
+        <RadioButton
+            android:id="@+id/frag_crea_animal_radio_chien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chien" />
+        <RadioButton
+            android:id="@+id/frag_crea_animal_radio_oiseau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oiseau" />
+        <RadioButton
+            android:id="@+id/frag_crea_animal_radio_hamster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hamster" />
+        <RadioButton
+            android:id="@+id/frag_crea_animal_radio_cochon_inde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cochon d'inde" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/frag_crea_animal_editText_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_crea_animal_radio_group_espece"
+        app:layout_constraintVertical_bias="0.05"
+        android:hint="@string/nomAnimal"/>
+    <EditText
+        android:id="@+id/frag_crea_animal_editText_dateNaissance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_crea_animal_editText_nom"
+        app:layout_constraintVertical_bias="0.05"
+        android:hint="@string/hintBirthDate"/>
+    <EditText
+        android:id="@+id/frag_crea_animal_editText_poids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_crea_animal_editText_dateNaissance"
+        app:layout_constraintVertical_bias="0.05"
+        android:hint="@string/poids"/>
+    <RadioGroup
+        android:id="@+id/frag_crea_animal_radio_group_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_crea_animal_editText_poids"
+        app:layout_constraintVertical_bias="0.05">
+
+        <RadioButton
+            android:id="@+id/frag_crea_animal_radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/frag_crea_animal_radio_femelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Femelle" />
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/frag_crea_animal_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_crea_animal_radio_group_genre"
+        app:layout_constraintVertical_bias="0.05"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sterilise"
+            />
+
+        <CheckBox
+            android:id="@+id/frag_crea_animal_sterilise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/frag_crea_animal_saveButton"
+
+        style="@style/saveButtonRappel"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_crea_animal_frame"
+        app:layout_constraintVertical_bias="0.1"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

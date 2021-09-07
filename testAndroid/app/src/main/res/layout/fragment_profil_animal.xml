@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/frag_profil_animal_frame_1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:background="@color/myLightGrey"/>
+
+    <ImageView
+        android:id="@+id/frag_profil_animal_imageView"
+        android:background="@drawable/animal_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:src="@drawable/silhouette_chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:elevation="100px"
+        />
+    <TextView
+        android:id="@+id/frag_profil_animal_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="[Nom animal]"
+
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_profil_animal_imageView"
+        app:layout_constraintVertical_bias="0.01"/>
+
+
+    <Button
+        android:id="@+id/frag_profil_animal_ajout_animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_orange_plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.952" />
+
+    <Button
+        android:id="@+id/frag_profil_animal_bouton_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/camera_image"
+
+        app:layout_constraintBottom_toTopOf="@+id/frag_profil_animal_imageView"
+        app:layout_constraintEnd_toStartOf="@+id/frag_profil_animal_imageView"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/frag_profil_animal_imageView"
+        app:layout_constraintTop_toTopOf="@+id/frag_profil_animal_imageView"
+        app:layout_constraintVertical_bias="0" />
+
+    <Button
+        android:id="@+id/frag_profil_animal_precedent"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_baseline_arrow_left_24"
+
+        app:layout_constraintEnd_toStartOf="@+id/frag_profil_animal_imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+
+
+        app:layout_constraintTop_toTopOf="@+id/frag_profil_animal_imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/frag_profil_animal_imageView"
+        />
+
+    <Button
+        android:id="@+id/frag_profil_animal_suivant"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_baseline_arrow_right_24"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/frag_profil_animal_imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/frag_profil_animal_imageView"
+        app:layout_constraintTop_toTopOf="@+id/frag_profil_animal_imageView"
+         />
+
+    <Button
+        android:id="@+id/frag_profil_animal_open_info_animal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Infos générales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_profil_animal_frame_1"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/frag_profil_animal_open_rappel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rappels"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_profil_animal_open_info_animal"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/frag_profil_animal_open_dossier_medical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carnet de santé"
+
+        android:textColor="@color/myBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_profil_animal_open_rappel"
+        app:layout_constraintVertical_bias="0.05" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

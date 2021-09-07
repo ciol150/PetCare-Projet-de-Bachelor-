@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/frag_carnet_sante_retour"
+
+        style="@style/retourBouton"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.05"/>
+
+    <ScrollView
+        android:layout_marginTop="50px"
+        android:id="@+id/frag_carnet_sante_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="600dp"
+
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_carnet_sante_retour"
+        app:layout_constraintVertical_bias="0.01"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frag_carnet_sante_retour"
+            app:layout_constraintVertical_bias="0.01"
+            >
+
+    <TextView
+        android:id="@+id/frag_carnet_sante_visites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visites médicales"
+        android:textSize="60px"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/myBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/frag_carnet_sante_recyclerview_visites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/recycler_view_rappel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_carnet_sante_visites"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="1px"
+        app:layout_constraintVertical_bias="0.05"
+
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/frag_carnet_sante_traitements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Traitements"
+        android:textSize="60px"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/myBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_carnet_sante_recyclerview_visites"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/frag_carnet_sante_recyclerview_traitements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/recycler_view_rappel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frag_carnet_sante_traitements"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="1px"/>
+
+
+    <TextView
+        android:id="@+id/frag_carnet_sante_vaccins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vaccins"
+        android:textSize="60px"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/myBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_carnet_sante_recyclerview_traitements"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/frag_carnet_sante_recyclerview_vaccins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/recycler_view_rappel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frag_carnet_sante_vaccins"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="1px"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/frag_carnet_sante_ajouter"
+        android:background="@drawable/ic_blue_plus"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.95"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

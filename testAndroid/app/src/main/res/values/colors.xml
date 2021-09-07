@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--    Mes couleurs    -->
+    <color name="myWhite">      #FFFFFF</color>
+    <color name="myBlack">      #000000</color>
+    <color name="myLightGrey">  #EFEFEF</color>
+    <color name="myDarkGrey">   #C4C4C4</color>
+    <color name="myRed">        #EB5757</color>
+    <color name="myGreen">      #5DF20C</color>
+    <color name="myOrange">     #F28D00</color>
+    <color name="myBlue">       #51D5FF</color>
+    <color name="myDarkBlue">   #2829E6</color>
+
+
+</resources>

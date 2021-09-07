@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="rappel_intervalle_unite">
+        <item>heures</item>
+        <item>jours</item>
+        <item>semaines</item>
+        <item>mois</item>
+    </string-array>
+</resources>
